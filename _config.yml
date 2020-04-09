@@ -17,7 +17,8 @@ highlighter: rouge
 permalink: /:title/
 
 collections:
-  - products
+  products:
+    output: true
 
 # paginate: 5
 # paginate_path: "/blog/page:num"
