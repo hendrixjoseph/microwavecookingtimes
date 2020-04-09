@@ -16,6 +16,9 @@ markdown: kramdown
 highlighter: rouge
 permalink: /blog/:title/
 
+collections:
+  - products
+
 # paginate: 5
 # paginate_path: "/blog/page:num"
 
