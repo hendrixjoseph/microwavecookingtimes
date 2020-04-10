@@ -11,7 +11,7 @@ How long does it take to cook {{ page.brand }} {{ page.title }} in the microwave
 </div><div>
 {% assign imagepath = page.url | remove_first: "/for" %} {{ imagepath }}<br />
 {% for image in site.static_files %}
-{% if image.extname == ".jpg" and image.path contains "lean-cuisine" %}
+{% if image.extname == ".jpg" and image.path contains imagepath %}
 {{ image.path }} /?/ <br />
 {% endif %}
 {% endfor %}
