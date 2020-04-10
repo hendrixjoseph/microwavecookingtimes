@@ -19,7 +19,7 @@ permalink: /:title/
 collections:
   products:
     output: true
-    permalink: /for/:name
+    permalink: /for/:path/
 
 # paginate: 5
 # paginate_path: "/blog/page:num"
