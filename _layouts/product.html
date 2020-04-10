@@ -9,7 +9,7 @@ How long does it take to cook {{ page.brand }} {{ page.title }} in the microwave
 </div><div>
 {{ content }}
 </div><div>
-{{ page.url }} // <br />
+{{ page.path }} // {{ page.url | remove_first: "/for/" }}<br />
 {% for file in site.static_files %}
 {% if file.extname == ".jpg" and file.path contains "lean-cuisine" %}
 {{ file.path }} /?/ <br />
