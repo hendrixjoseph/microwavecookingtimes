@@ -8,7 +8,7 @@ layout: default
 How long does it take to cook {{ page.brand }} {{ page.title }} in the microwave?
 </div><div>
 {{ content }}
-</div><div>{% assign imagepath = page.url | remove_first: "/for" %}
+</div><div class="product-images">{% assign imagepath = page.url | remove_first: "/for" %}
 {% for image in site.static_files %}{% if image.extname == ".jpg" and image.path contains imagepath %}
 <img src="{{ image.path }}">
 {% endif %}{% endfor %}

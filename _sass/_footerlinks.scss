@@ -1,0 +1,22 @@
+.footer-links {
+    font-size: 0.75em;
+    margin: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    
+    a {
+        display: block;
+    }
+    
+    span {
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.5em;
+        
+        @include mobile {
+            display: block;
+            text-align: center;
+        }
+    }
+}
