@@ -9,9 +9,11 @@ How long does it take to cook {{ page.brand }} {{ page.title }} in the microwave
 </div><div>
 {{ content }}
 </div><div>
-{{ url }} //
+{{ page.url }} // <br />
 {% for file in site.static_files %}
-{{ file.path }} /?/
+{% if file.extname == ".jpg" and file.path contains "lean-cusine" %}
+{{ file.path }} /?/ <br />
+{% endif %}
 {% endfor %}
 </div></div>
 </article>
