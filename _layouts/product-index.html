@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<article>
+<h1>{{ page.brand }}</h1>
+<div><div>
+{{ page.path }}
+{% for product in site.products %}
+<a href="{{ product.url }}">{{ product.relative_path }}</a>
+{% endfor %}
+</div><div>
+{{ content }}
+</div></div>
+</article>
