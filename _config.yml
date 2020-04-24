@@ -28,7 +28,7 @@ defaults:
       type: "products"
     values:
       layout: "product"
-   -
+  -
     scope:
       path: "*/index.html"
       type: "products"
