@@ -5,10 +5,10 @@ layout: default
 <article>
 <h1>{{ page.brand }}</h1>
 <div><div>
-{{ page.path }}
-{% for product in site.products %}
-<a href="{{ product.url }}">{{ product.relative_path }}</a>
-{% endfor %}
+{{ page.url }}
+<ul>{% for product in site.products %}
+<li><a href="{{ product.url }}">{{ product.url }}</a></li>
+{% endfor %}</ul>
 </div><div>
 {{ content }}
 </div></div>
