@@ -1,5 +1,4 @@
 ---
-layout: product
 brand: Lean Cuisine
 title: Vermont White Cheddar Mac & Cheese
 ---

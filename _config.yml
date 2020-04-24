@@ -20,6 +20,14 @@ collections:
   products:
     output: true
     permalink: /for/:path/
+    
+defaults:
+  -
+    scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
 
 # paginate: 5
 # paginate_path: "/blog/page:num"
