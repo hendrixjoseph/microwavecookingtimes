@@ -30,7 +30,7 @@ defaults:
       layout: "product"
   -
     scope:
-      path: "*/index.html"
+      path: "*/index/"
       type: "products"
     values:
       layout: "product-index"
