@@ -1,3 +1,0 @@
----
-brand: Lean Cuisine
----
