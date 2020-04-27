@@ -16,7 +16,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 
-collections
+collections:
   brands:
     output: true
     permalink: /for/:name/
