@@ -1,3 +1,3 @@
 ---
-brand: Lean Cuisine
+title: Lean Cuisine
 ---

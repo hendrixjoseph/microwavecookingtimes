@@ -4,7 +4,7 @@ layout: default
 
 {% assign brand = site.brands | where_exp:'brand', 'page.url contains brand.url' | first %}
 <article>
-<h1>{{ brand.brand }} // {{ page.brand }} {{ page.title }}</h1>
+<h1>{{ brand.title }} {{ page.title }}</h1>
 <div><div>
 How long does it take to cook {{ page.brand }} {{ page.title }} in the microwave?
 </div><div>
@@ -15,4 +15,3 @@ How long does it take to cook {{ page.brand }} {{ page.title }} in the microwave
 {% endif %}{% endfor %}
 </div></div>
 </article>
-{{ brand | inspect }}
