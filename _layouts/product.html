@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign brand = site.brands | where_exp:'brand', 'page.url contains brand.url' %}
+{% assign brand = site.brands | where_exp:'brand', 'page.url contains brand.url' | first %}
 <article>
 <h1>{{ brand.brand }} // {{ page.brand }} {{ page.title }}</h1>
 <div><div>
