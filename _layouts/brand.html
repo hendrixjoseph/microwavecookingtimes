@@ -6,7 +6,8 @@ layout: default
 <h1>{{ page.brand }}</h1>
 <div><div>
 {{ page.url }}
-<ul>{% for product in site.products %}
+{% assign brand_products = site.products | where_exp:'url', 'url contains page.url' %}
+<ul>{% for product in brand_products %}
 <li><a href="{{ product.url }}">{{ product.url }}</a></li>
 {% endfor %}</ul>
 </div><div>
