@@ -2,9 +2,6 @@
 layout: default
 ---
 
-Coming soon: Microwave cooking times.
-
-
 <ul>{% for brand in site.brands %}
 <li><a href="{{ brand.url }}">{{ brand.title }}</a></li>
 {% assign brand_products = site.products | where_exp:'product', 'product.url contains brand.url' %}
