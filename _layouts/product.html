@@ -3,17 +3,16 @@ layout: default
 ---
 
 {% assign brand = site.brands | where_exp:'brand', 'page.url contains brand.url' | first %}
-<article>
 <h1>{{ brand.title }} {{ page.title }}</h1>
-<div><div>
+<div>
 How long does it take to cook {{ page.brand }} {{ page.title }} in the microwave?
-</div><div>
+</div>
+<div>
 {{ content }}
-</div><div class="product-images">{% assign imagepath = page.url | remove_first: "/for" %}
+</div>
+<div class="product-images">{% assign imagepath = page.url | remove_first: "/for" %}
 {% for image in site.static_files %}{% if image.extname == ".jpg" and image.path contains imagepath %}
 <img alt="{{ brand.title }} {{ page.title }} {{ image.basename }}" src="{{ image.path }}">
 {% endif %}{% endfor %}
 </div>
 <div>Back to <a href="{{ brand.url }}">{{ brand.title }}</a></div>
-</div>
-</article>
