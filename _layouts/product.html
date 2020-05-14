@@ -13,5 +13,7 @@ How long does it take to cook {{ page.brand }} {{ page.title }} in the microwave
 {% for image in site.static_files %}{% if image.extname == ".jpg" and image.path contains imagepath %}
 <img alt="{{ brand.title }} {{ page.title }} {{ image.basename }}" src="{{ image.path }}">
 {% endif %}{% endfor %}
-</div></div>
+</div>
+<div>Back to <a href="{{ brand.url }}">{{ brand.title }}</a></div>
+</div>
 </article>
