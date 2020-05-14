@@ -7,8 +7,24 @@
 
 @import "reset";
 
+body {
+    background: darkgray;
+}
+
+.container {
+    padding: 1em;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+article {    
+    background: white;    
+    padding: 2em;
+    border-radius: 35px;
+}
+
 .product-images img {
     max-width: 250px;
     max-height: 250px;
-	margin: 0 5px;
+    margin: 0 5px;
 }
