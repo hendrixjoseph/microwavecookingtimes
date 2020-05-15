@@ -16,7 +16,7 @@ body, .container {
 }
 
 .container {
-    padding: 1em;
+    padding: 1em 1em 3em 1em;
     max-width: 75%;
     margin: 0 auto;
 	position: relative;
@@ -58,6 +58,10 @@ article {
     max-width: 250px;
     max-height: 250px;
     margin: 0 5px;
+}
+
+.product-images img:hover {
+	transform: scale(1.5);
 }
 
 footer {
