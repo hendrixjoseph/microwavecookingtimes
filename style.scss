@@ -11,10 +11,34 @@ body {
     background: darkgray;
 }
 
+body, container {
+	min-heights: 100vh;
+}
+
 .container {
     padding: 1em;
     max-width: 75%;
     margin: 0 auto;
+}
+
+header div {
+    margin: 0.5em;
+}
+
+.site-name {
+	font-variant: small-caps;
+    font-weight: bold;
+	font-size: 2rem;
+	
+	a {
+		text-decoration: none;
+	}
+}
+
+.site-tagline {
+	font-style: italic;
+    font-weight: bold;
+    font-size: larger;
 }
 
 article {    
