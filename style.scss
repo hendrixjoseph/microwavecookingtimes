@@ -19,6 +19,7 @@ body, .container {
     padding: 1em;
     max-width: 75%;
     margin: 0 auto;
+	position: relative;
 }
 
 header {
@@ -64,4 +65,5 @@ footer {
 	bottom: 0;
     position: absolute;
     padding: 1em;
+	width: 100%;
 }
