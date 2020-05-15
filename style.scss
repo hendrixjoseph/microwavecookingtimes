@@ -11,8 +11,8 @@ body {
     background: darkgray;
 }
 
-body, container {
-	min-heights: 100vh;
+body, .container {
+    min-heights: 100vh;
 }
 
 .container {
@@ -26,17 +26,17 @@ header div {
 }
 
 .site-name {
-	font-variant: small-caps;
+    font-variant: small-caps;
     font-weight: bold;
-	font-size: 2rem;
-	
-	a {
-		text-decoration: none;
-	}
+    font-size: 2rem;
+    
+    a {
+        text-decoration: none;
+    }
 }
 
 .site-tagline {
-	font-style: italic;
+    font-style: italic;
     font-weight: bold;
     font-size: larger;
 }
