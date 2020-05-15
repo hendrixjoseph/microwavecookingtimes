@@ -1,4 +1,4 @@
-<header>
-	<h1><a href="https://www.microwavecookingtimes.com/">{{ site.name }}</a></h1>
+<header>page.name
+	<{% if page.name == "index.html" %}h1{% else %}div{% endif %} class="site-name"><a href="https://www.microwavecookingtimes.com/">{{ site.name }}</a></{% if page.name == "index.html" %}h1{% else %}div{% endif %}>
 	<div>{{ site.description }}</div>
 </header>
