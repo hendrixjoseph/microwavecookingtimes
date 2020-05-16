@@ -2,7 +2,7 @@
 <html lang="en-us">
 	<head itemscope itemtype="http://schema.org/WebSite">
 		<title itemprop='name'>{{ site.name }}{% if page.title %} for {{ page.title }}{% endif %}</title>
-		{% if page.noindex or layout.noindex %}<meta name="robots" content="noindex" />{% endif %}
+{% include metadata/meta.html %}
 
 		<link rel="stylesheet" type="text/css" href="/style.css" />
 
