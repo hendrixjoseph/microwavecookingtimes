@@ -11,4 +11,9 @@ layout: default
 <img alt="{{ brand.title }} {{ page.title }} {{ image.basename }}" src="{{ image.path }}">
 {% endif %}{% endfor %}
 </p>
+<p><ul>
+<li><a href="https://www.walmart.com/search/?query={{ brand.title }} {{ page.title }}">Search {{ brand.title }} {{ page.title }} on Walmart.com</a></li>
+<li><a href="https://www.amazon.com/s?k={{ brand.title }} {{ page.title }}">Search {{ brand.title }} {{ page.title }} on Amazon</a></li>
+<li><a href="https://www.target.com/s?searchTerm={{ brand.title }} {{ page.title }}">Search {{ brand.title }} {{ page.title }} on Target.com</a></li>
+</ul>
 <p>Back to <a href="{{ brand.url }}">{{ brand.title }}</a></p>
