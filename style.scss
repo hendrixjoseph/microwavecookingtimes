@@ -9,6 +9,7 @@
 
 body {
     background: darkgray;
+	font-size: x-large;
 }
 
 body, .container {
@@ -52,6 +53,15 @@ article {
     background: white;    
     padding: 2em;
     border-radius: 35px;
+	
+	h1 {
+		font-size: xx-large;
+		margin-bottom: 1em;
+	}
+	
+	li {
+		margin: 1em;
+	}
 }
 
 .product-images img {
