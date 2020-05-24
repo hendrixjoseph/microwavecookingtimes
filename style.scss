@@ -27,8 +27,13 @@
 }
 
 body, .container {
-    min-height: 100vh;
+    min-height: calc(100vh - 3.5rem);
 	padding: 0;
+}
+
+.container {
+	position: relative;
+	padding-bottom: 3.5rem;
 }
 
 header {
@@ -38,4 +43,5 @@ header {
 footer {
 	bottom: 0;
     position: absolute;
+	margin-bottom: 2rem;
 }
