@@ -28,15 +28,14 @@
 
 body, .container {
     min-height: 100vh;
+	padding: 0;
 }
 
-.container {
-	position: relative;
-    padding: 0 0 3em 0;
+header {
+	margin-top: 0;
 }
 
 footer {
 	bottom: 0;
     position: absolute;
-    padding: 1em;
 }
