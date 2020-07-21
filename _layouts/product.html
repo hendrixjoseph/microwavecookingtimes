@@ -4,7 +4,7 @@ layout: default
 
 {% assign brand = site.brands | where_exp:'brand', 'page.url contains brand.url' | first %}
 <h1>{{ brand.title }} {{ page.title }}</h1>
-<p>How long does it take to cook {{ brand }} {{ page.title }} in the microwave?</p>
+<p>How long does it take to cook {{ brand.title }} {{ page.title }} in the microwave?</p>
 <p>{{ content }}</p>
 <p class="product-images">{% assign imagepath = page.url | remove_first: "/for" %}
 {% for image in site.static_files %}{% if image.extname == ".jpg" and image.path contains imagepath %}
